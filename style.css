@@ -28,7 +28,7 @@ h2{
 }
 .pill
 {
-
+    box-shadow: 0px 8px 2px 0px #11496e;
    border: 3px solid #ffffff;
    background: transparent;
     padding: 25px 25px;
@@ -41,6 +41,7 @@ h2{
     transform: translate(-50%, +500%);
     overflow: hidden;
     cursor: pointer;
+    transition: .25s;
    
 }
 .pill::before{
@@ -69,6 +70,7 @@ h2{
 
 
 .pill::after{
+    
     content: "";
     height: 350px;
     width: 350px;
@@ -92,5 +94,12 @@ h2{
 .pill:hover::after{
 
         top: -10%;
+
+}
+.pill:active{
+
+    color: #786fd3;
+    border: 3px solid #786fd3;
+    box-shadow: 0px 10px 0px 1px #786fd3;
 
 }
