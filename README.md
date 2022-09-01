@@ -188,3 +188,42 @@ p1{
 
 }
 ```
+**I designed after click button**
+```
+.pill:active{
+
+    color: #786fd3;
+    border: 3px solid #786fd3;
+    box-shadow: 0px 10px 0px 1px #786fd3;
+
+}
+```
+**I did it same thing for second button.** 
+**I adjusted my canvas size and position for confetti effect. I hid my canvas until switch active. I gave a opacity animation.**
+```
+#my-canvas{
+
+        position: absolute;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    visibility: hidden;
+}
+#my-canvas.active{
+    animation: fade 2s linear ; 
+    visibility: visible;
+    transition: .10s;
+}
+@keyframes fade
+{
+    0%{
+        opacity: 0%;
+    }
+}
+
+```
+
+#THANK YOU,
+## EREM RYAN TEZCAN.
