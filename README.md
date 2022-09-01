@@ -199,6 +199,8 @@ p1{
 }
 ```
 **I did it same thing for second button.** 
+
+
 **I adjusted my canvas size and position for confetti effect. I hid my canvas until switch active. I gave a opacity animation.**
 ```
 #my-canvas{
