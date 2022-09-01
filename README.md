@@ -9,6 +9,8 @@ To change my tab name, I put `<title> confetti show </title>`.
 
 I created my heads, titles, background image, canvas and scripts in `<body>`.
 
+## HTML
+
 **I created my canvas for java animation and put my thirt party confetti doc.**
     
 ```    
@@ -27,6 +29,8 @@ I created my heads, titles, background image, canvas and scripts in `<body>`.
      <button id="confetti" class="pill">CONFETTI TRIGGER</button>
      <button id="confetti" class="pill_1">FINISH IT</button>
 ```
+
+
 
 **I built my script with `<script>` to put java scripts and to give start and finish animation functions to buttons.**
 ```
@@ -49,4 +53,20 @@ I created my heads, titles, background image, canvas and scripts in `<body>`.
             }
             </script>
     <p1>This website created by Erem Ryan TEZCAN</p1>
-    ```
+ ```
+
+## CSS
+    
+ **I used a box for background image. I adjusted the image size and used `background-size: cover;` to avoid repetition of the picture.**
+   ``` 
+   .box{
+background-image: url(../test_erem_ryan/background.jpg);
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+position:absolute;
+background-size: cover;
+z-index: -2;
+}
+```
