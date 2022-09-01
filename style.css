@@ -115,6 +115,13 @@ h2{
 }
 #my-canvas.active{
     visibility: visible;
-
+    animation: animate 6s forwards;
 
 }
+    @keyframes animate {
+
+        100%{
+                
+                opacity: 0;
+        }
+    }
