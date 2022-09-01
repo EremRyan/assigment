@@ -149,3 +149,42 @@ p1{
     transition: 2s;
 }
 ```
+**I used `hover` to make a rising wave animation, when the cursor comes over to the button.**
+```
+.pill:hover::before{
+
+        top: -15%;
+
+}
+```
+
+**I duplicated these codes for creating a second wave layer in the animation. I changed 'before' expression to 'after' to avoid clashing two layers animation, then I adjusted my second layer animation position and height.**
+```
+.pill::after{
+    
+    content: "";
+    height: 350px;
+    width: 350px;
+    background: rgb(54, 173, 241);
+    position:absolute;
+    left:60%;
+    top: 28%;
+    transform: translate(-50%);
+    z-index: -1;
+    border-radius: 150px;
+    animation: wave 5s infinite linear;
+    transform: translate(-50%) rotate(200deg);
+    transition: 2s;
+}
+@keyframes wave{
+    0%{
+        transform: translate(-50%)rotate(-180deg);
+    }
+  
+}
+.pill:hover::after{
+
+        top: -10%;
+
+}
+```
