@@ -70,3 +70,82 @@ background-size: cover;
 z-index: -2;
 }
 ```
+**I adjusted my texts, such as colour, potion, etc...**
+```
+h1{
+    color: rgb(37, 90, 134);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+  
+    
+
+}
+P{
+
+    color: rgb(0, 117, 53);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    
+    
+}
+h2{
+
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    white-space: nowrap;
+    position: fixed;
+    transform: translate(750%, 50%);
+
+}
+p1{
+    position: fixed;
+    bottom: 0px ;
+    left: 15px;
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+
+}
+```
+
+**I personalised my button without animation.**
+```
+.pill
+{
+    box-shadow: 0px 8px 2px 0px #11496e;
+   border: 3px solid #ffffff;
+   background: transparent;
+    padding: 25px 25px;
+    font-size: 20px;
+    font-family: fantasy;
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    transform: translate(-50%, +500%);
+    overflow: hidden;
+    cursor: pointer;
+    transition: .25s;
+```
+**I created "before click button design". I used content and give background to create my animation layer and I adjusted its position, radius and gave a rotation animation. I used `overflow:hidden` on above to hide my animation layers that is out of button part**
+```
+.pill::before{
+    content: "";
+    height: 350px;
+    width: 350px;
+    background: rgb(5, 197, 255);
+    position:absolute;
+    left:60%;
+    top: 25%;
+    transform: translate(-50%);
+    z-index: -2;
+    border-radius: 150px;
+    animation: wave 5s infinite linear;
+    transform: translate(-50%) rotate(150deg);
+    transition: 2s;
+}
+```
