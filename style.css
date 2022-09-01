@@ -123,6 +123,70 @@ box-shadow: 0px 8px 2px 0px #11496e;
 
 
 }
+.pill_1::before{
+    content: "";
+    height: 350px;
+    width: 350px;
+    background: rgb(255, 97, 5);
+    position:absolute;
+    left:60%;
+    top: 30%;
+    transform: translate(-50%);
+    z-index: -2;
+    border-radius: 155px;
+    animation: wave 5s infinite linear;
+    transform: translate(-50%) rotate(150deg);
+    transition: 2s;
+}
+
+
+.pill_1:hover::before{
+
+        top: -15%;
+
+}
+    
+
+
+.pill_1::after{
+    
+    content: "";
+    height: 350px;
+    width: 350px;
+    background: rgb(255, 8, 8);
+    position:absolute;
+    left:60%;
+    top: 45%;
+    transform: translate(-50%);
+    z-index: -1;
+    border-radius: 140px;
+    animation: wave 5s infinite linear;
+    transform: translate(-50%) rotate(200deg);
+    transition: 2s;
+}
+@keyframes wave{
+    0%{
+        transform: translate(-50%)rotate(-180deg);
+    }
+  
+}
+.pill_1:hover::after{
+
+        top: -10%;
+
+}
+.pill_1:active{
+
+    color: #786fd3;
+    border: 3px solid #786fd3;
+    box-shadow: 0px 10px 0px 1px #786fd3;
+   
+}
+
+
+
+
+
 #my-canvas{
 
         position: absolute;
@@ -135,13 +199,4 @@ box-shadow: 0px 8px 2px 0px #11496e;
 }
 #my-canvas.active{
     visibility: visible;
-    animation: animate 6s forwards;
-
 }
-    @keyframes animate {
-
-        100%{
-                
-                opacity: 0;
-        }
-    }

@@ -14,11 +14,11 @@
 
    <center>
     <h1>Welcome to Bubble Relief!</h1>
-     <p>Hello user, this website created to get rid of your anxiety.</p>
+     <p>Hello user, this website created to celebrate you.</p>
      <h2>PLEASE ENJOY!</h2>
      
      <div>
-     <button id="confetti" class="pill">BUBBLE TRIGGER</button>
+     <button id="confetti" class="pill">CONFETTI TRIGGER</button>
      <button id="confetti" class="pill_1">FINISH IT</button>
 
      
@@ -29,7 +29,7 @@
    
             let pill= document.querySelector('.pill');
             let confe = document.querySelector('#my-canvas');
-           
+            let pill_1 = document.querySelector('.pill_1')
             
             var confettiSettings = { target: 'my-canvas' };
             var confetti = new ConfettiGenerator(confettiSettings);
@@ -37,7 +37,10 @@
             pill.onclick = function(){
                 confe.classList.add('active');
              
-        
+            }
+            pill_1.onclick = function(){
+                confe.classList.remove('active');
+                
             }
             </script>
 </body>
